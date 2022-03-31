@@ -101,6 +101,9 @@ router.post("/login", async (req, res) => {
   let user = users.find((user) => {
     return user.email === email;
   });
+  //New Part Start Connect 
+
+  //New Part End Connect 
 
   // If user not found, send error message
   if (!user) {
